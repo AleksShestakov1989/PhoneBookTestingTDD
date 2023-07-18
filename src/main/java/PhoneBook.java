@@ -32,6 +32,7 @@ public class PhoneBook {
 
     public static List<String> printAllNames() {
         List<String> list = new ArrayList<>();
+        list.addAll(phoneBook.keySet());
         return list;
     }
 }
