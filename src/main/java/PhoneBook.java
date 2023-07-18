@@ -23,4 +23,8 @@ public class PhoneBook {
         }
         return "Number is bad";
     }
+
+    public static String findByName(String name) {
+        return null;
+    }
 }
