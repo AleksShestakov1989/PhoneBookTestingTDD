@@ -14,7 +14,13 @@ public class PhoneBook {
     }
 
     public static String findByNumber(String number) {
-
-        return null;
+        if (phoneBook.containsValue(number)) {
+            for (Map.Entry<String, String> entry : phoneBook.entrySet()) {
+                if (entry.getValue().equals(number)) {
+                    return entry.getKey();
+                }
+            }
+        }
+        return "Number is bad";
     }
 }
