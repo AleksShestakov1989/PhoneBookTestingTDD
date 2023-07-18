@@ -16,4 +16,11 @@ public class PhoneBookTest {
         final int actual = phoneBook.add("One", "333");
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void findByNumber() {
+        final String expected = "Two";
+        final String actual = phoneBook.findByNumber("222");
+        assertEquals(expected, actual);
+    }
 }
